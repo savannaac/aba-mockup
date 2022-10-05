@@ -1,7 +1,47 @@
 body {
     background-color: #fff;
     background-image: url("public/images/white-wood.jpeg");
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif; */
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+li {
+    margin-right: 5rem;
+}
+
+/* fixed header  */
+.logo {
+    height: 125px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.navigation {
+    border-bottom: 1px solid #605B50;
+    border-top: 1px solid #605B50;
+    height: 50px;
+    margin-top: 40px;
+    width: 905px;
+}
+
+.navigation a {
+    color: #605B50;
     font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
 }
 
