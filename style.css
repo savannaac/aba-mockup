@@ -6,6 +6,8 @@ body {
 }
 
 ul {
+    border-bottom: 1px solid #ABA8A0;
+    border-top: 1px solid #ABA8A0;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -13,7 +15,20 @@ ul {
 }
 
 li {
-    margin-right: 5rem;
+    margin-right: 10rem;
+    padding: .15rem;
+}
+
+h1 {
+    color: #000;
+    font-family: 'Playfair Display', serif;  
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
 }
 
 /* fixed header  */
@@ -24,11 +39,9 @@ li {
 }
 
 .navigation {
-    border-bottom: 1px solid #605B50;
-    border-top: 1px solid #605B50;
-    height: 50px;
+    height: 3rem;
     margin-top: 40px;
-    width: 905px;
+    width: 75%;
 }
 
 .navigation a {
@@ -40,8 +53,49 @@ li {
     text-transform: uppercase;
 }
 
-.flex-row {
-    display: flex;
-    flex-direction: row;
+/* content */
+.content-container{
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 50px;
+    width: 98%;
 }
 
+.picture-container {
+    display: flex;
+    flex-direction: row;
+    height: 35rem;
+    width: 100%;
+}
+
+/* form  */
+.reservation-form-container {
+    border-bottom: 1px solid #ABA8A0;
+    border-top: 1px solid #ABA8A0;
+    height: 10rem;
+    margin: auto;
+    margin-top: 3rem;
+    width: 90%;
+}
+
+.reservation-form {
+    border: 1px dotted blue;
+    padding: 2rem;
+}
+
+input[type=text] {
+    border: 1px solid #82A2D5;
+    font-family: 'Montserrat', sans-serif;
+    height: 2rem;
+    resize: vertical;
+    width: 14rem;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #0F2951;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    height: 2rem;
+    width: 14rem;
+  }
