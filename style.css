@@ -24,10 +24,26 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+    color: #fff;
+    font-family: 'Playfair Display', serif;  
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-bottom: -.6rem;
+    text-transform: uppercase;
+}
+
 p {
     color: #605B50;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;  
+}
+
+.footer-info {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;  
+    margin-bottom: -.9rem;
 }
 
 button {
@@ -165,7 +181,19 @@ input[type=button], input[type=submit], input[type=reset] {
 .footer {
     background-image: url("public/images/wood.jpg");
     height: 28rem;
+    margin-top: 2rem;
     position: relative;
+}
+
+.footer-content-container {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    margin-right: 6rem;
 }
 
 .footer-ul {
@@ -185,8 +213,6 @@ input[type=button], input[type=submit], input[type=reset] {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 12px;
-    /* padding: 1rem; */
-    /* margin-right: -2rem; */
     text-decoration: none;
     text-transform: uppercase;
 }
