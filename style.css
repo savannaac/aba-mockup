@@ -23,7 +23,24 @@ h1 {
     text-transform: uppercase;
 }
 
+p {
+    color: #605B50;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;  
+}
+
+button {
+    background-color: #0F2951;
+    color: #fff;
+    font-family: 'Playfair Display', serif; 
+    font-size: .8rem;
+    height: 2rem;
+    text-transform: uppercase;
+    width: 15rem;
+}
+
 .flex-row {
+    align-items: center;
     display: flex;
     flex-direction: row;
 }
@@ -42,7 +59,6 @@ h1 {
 
 .navigation {
     height: 3rem;
-    margin-top: 38px;
     width: 75%;
 }
 
@@ -74,6 +90,28 @@ h1 {
     flex-direction: row;
     height: 35rem;
     width: 100%;
+}
+
+.content-container-1 {
+    align-items: center;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 4rem;
+    width: 90%
+}
+
+.content-1-info {
+    border-bottom: 1px solid #ABA8A0;
+    border-top: 1px solid #ABA8A0;
+    padding: 2rem;
+    width: 90%;
+}
+
+.content-1-pic {
+    object-fit: cover;
+    width: 30%;
 }
 
 /* form  */
