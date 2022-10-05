@@ -105,24 +105,27 @@ button {
 }
 
 .content-info {
+    align-items: center;
     border-bottom: 1px solid #ABA8A0;
     border-top: 1px solid #ABA8A0;
-    padding: 2rem;
+    display: flex;
+    height: auto;
+    padding: 1rem;
     width: 90%;
 }
 
 .content-pic {
     border: 1px dotted black;
-    height: 25rem;
+    height: 20rem;
     object-fit: cover;
-    width: 30rem;
+    width: 25rem;
 }
 
 .content-pic-zoom {
     border: 1px dotted black;
-    height: 25rem;
+    height: 20rem;
     object-fit: none;
-    width: 30rem;
+    width: 25rem;
 }
 
 /* form  */
