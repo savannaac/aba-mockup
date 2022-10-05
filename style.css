@@ -19,7 +19,8 @@ li {
 h1 {
     color: #000;
     font-family: 'Playfair Display', serif;  
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
@@ -35,6 +36,7 @@ button {
     font-family: 'Playfair Display', serif; 
     font-size: .8rem;
     height: 2rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
     width: 15rem;
 }
@@ -92,26 +94,35 @@ button {
     width: 100%;
 }
 
-.content-container-1 {
+.inner-content-container {
     align-items: center;
     border: 1px solid green;
     display: flex;
     flex-direction: row;
+    padding: 2rem;
     margin: auto;
-    margin-top: 4rem;
     width: 90%
 }
 
-.content-1-info {
+.content-info {
     border-bottom: 1px solid #ABA8A0;
     border-top: 1px solid #ABA8A0;
     padding: 2rem;
     width: 90%;
 }
 
-.content-1-pic {
+.content-pic {
+    border: 1px dotted black;
+    height: 25rem;
     object-fit: cover;
-    width: 30%;
+    width: 30rem;
+}
+
+.content-pic-zoom {
+    border: 1px dotted black;
+    height: 25rem;
+    object-fit: none;
+    width: 30rem;
 }
 
 /* form  */
@@ -120,6 +131,7 @@ button {
     border-top: 1px solid #ABA8A0;
     height: 10rem;
     margin: auto;
+    margin-bottom: 4rem;
     margin-top: 3rem;
     width: 90%;
 }
