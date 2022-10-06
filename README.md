@@ -1,4 +1,4 @@
-# Aba Restaurant Site Mockup
+# Aba Restaurant Site Mock-up
 Landing page mock-up for **Lettuce Entertain You** using HTML and CSS and JavaScript.
 
 ## Installation
