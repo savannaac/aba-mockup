@@ -1,7 +1,5 @@
 body {
     background-color: #fff;
-    /* font-family: 'Montserrat', sans-serif;
-    font-family: 'Playfair Display', serif; */
 }
 
 ul {
@@ -61,28 +59,25 @@ button {
     align-items: center;
     display: flex;
     flex-direction: row;
+    /* gap: 1rem; */
 }
 
 /* fixed header  */
 .header {
     background-image: url("public/images/white-wood.jpeg");
-    border: 1px solid yellow; 
+    /* border: 1px solid yellow;  */
 }
 
 .logo {
     height: 125px;
     margin-left: 100px;
-    margin-right: 50px;
+    margin-right: 75px;
 }
 
 .navigation {
-    height: 3rem;
-    width: 75%;
-}
-
-.navigation-ul {
     border-bottom: 1px solid #ABA8A0;
     border-top: 1px solid #ABA8A0;
+    padding: .5rem
 }
 
 .navigation a {
@@ -90,14 +85,55 @@ button {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 16px;
+    letter-spacing: 3px;
+    margin-left: 2rem;
+    margin-right: 4rem;
     text-decoration: none;
     text-transform: uppercase;
 }
 
+.navigation.icon {
+    display: none;
+}
+
+/* responsive navigation  */
+a {
+    color: #605B50;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-right: 1rem;
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+
+@media screen and (max-width: 600px) {
+    .navigation a:not(:first-child) {display: none;}
+    .navigation a.icon {
+        display: block;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navigation.responsive {position: relative;}
+    .navigation.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navigation.responsive a {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+  }
+  
 /* content */
 .content-container{
+    /* border: 1px solid red; */
     background-image: url("public/images/white-wood.jpeg");
-    border: 1px solid red;
     margin: auto;
     margin-top: 50px;
     width: 98%;
@@ -111,8 +147,8 @@ button {
 }
 
 .inner-content-container {
+    /* border: 1px solid green; */
     align-items: center;
-    border: 1px solid green;
     display: flex;
     flex-direction: row;
     padding: 2rem;
@@ -131,14 +167,14 @@ button {
 }
 
 .content-pic {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     height: 20rem;
     object-fit: cover;
     width: 25rem;
 }
 
 .content-pic-zoom {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     height: 20rem;
     object-fit: none;
     width: 25rem;
@@ -156,7 +192,7 @@ button {
 }
 
 .reservation-form {
-    border: 1px dotted blue;
+    /* border: 1px dotted blue; */
     padding: 2rem;
 }
 
@@ -196,15 +232,11 @@ input[type=button], input[type=submit], input[type=reset] {
     margin-right: 6rem;
 }
 
-.footer-ul {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-evenly; */
-    list-style-type: none;
-}
-
 .footer-navigation {
     bottom: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
     position: absolute;
 }
 
@@ -213,6 +245,7 @@ input[type=button], input[type=submit], input[type=reset] {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 12px;
+    margin-right: 2rem;
     text-decoration: none;
     text-transform: uppercase;
 }

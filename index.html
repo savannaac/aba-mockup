@@ -14,6 +14,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 
+    <script>
+        function onToggle() {
+            const x = document.getElementById("navMenu");
+
+            if (x.className === "navigation") {
+                x.className += "responsive";
+            } else {
+                x.className = "navigation";
+            }
+        }
+
+    </script>
   </head>
 
   <body>
@@ -21,15 +33,14 @@
         <div class="flex-row">
             <a href=""><img src="public/images/Aba-Logo.png" alt="aba logo" class="logo"></a>
             
-            <div class="navigation">
-                <ul class="navigation-ul">
-                    <li><a href="">reserve</a></li>
-                    <li><a href="">menu</a></li>
-                    <li><a href="">group dining</a></li>
-                    <li><a href="">events</a></li>
-                    <li><a href="">team</a></li>
-                </ul>
-            </div>
+            <nav class="navigation" id="navMenu">
+                    <a href="">reserve</a>
+                    <a href="">menu</a>
+                    <a href="">group dining</a>
+                    <a href="">events</a>
+                    <a href="">team</a>
+                    <a href="javascript:void(0);" class="icon" onclick="onToggle()">+</a>
+            </nav>
         </div>    
     </div>
 
@@ -107,8 +118,8 @@
                 <p class="footer-info">Sat 11am - 1am</p>
                 <p class="footer-info">Sun 10am - 9pm</p><br><br>
 
-                <h2>contact</h2><br>
-                <h2>newsletter</h2>
+                <a href=""><h2>contact</h2></a><br>
+                <a href=""><h2>newsletter</h2></a><br>
             </div>
 
             <div class="footer-content">
@@ -121,18 +132,14 @@
             </div>
         </div>
 
-        <center>
-            <div class="footer-navigation">
-                <ul class="footer-ul">
-                    <li style="margin-left: 4rem;"><a href="">frequent diner</a></li>
-                    <li><a href="">gift cards</a></li>
-                    <li><a href="">employment</a></li>
-                    <li><a href="">leye.com</a></li>
-                    <li><a href="">terms of use</a></li>
-                    <li><a href="">privacy policy</a></li>
-                </ul>
-            </div>
-        </center>
+        <div class="footer-navigation">
+                <a href="" style="margin-left: 20rem;">frequent diner</a>
+                <a href="">gift cards</a>
+                <a href="">employment</a>
+                <a href="">leye.com</a></li>
+                <a href="">terms of use</a>
+                <a href="">privacy policy</a>
+        </div>
     </div>
 
 	<script src="index.js"></script>
