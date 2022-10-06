@@ -245,7 +245,20 @@ input[type=button], input[type=submit], input[type=reset] {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-size: 12px;
+    margin-bottom: 1rem;
     margin-right: 2rem;
     text-decoration: none;
     text-transform: uppercase;
 }
+
+/* responsive footer  */
+
+@media (max-width:600px) {
+    .footer-navigation a {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+}
+    

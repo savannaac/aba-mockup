@@ -25,6 +25,9 @@
             }
         }
 
+        function onSubmit() {
+            alert("Thank you! Your reservation was submitted.")
+        }
     </script>
   </head>
 
@@ -53,11 +56,18 @@
         <div class="reservation-form-container" id="">
             <center><div class="reservation-form">
                 <h1>make a reservation</h1>
-                <form id="">
+                <form id="reservation-form" onsubmit="onToggle()">
                     <input type="text" id="date" name="date" placeholder="date">
                     <input type="text" id="time" name="time" placeholder="time">
                     <input type="text" id="people" name="people" placeholder="people">
-                    <input type="submit" value="Find a Table">
+                    <button id="submit-button" onclick="onToggle()">Find a Table</button>
+                </form>
+
+                <form id="contact-form" style="display: none;" action="" onsubmit="onSubmit()">
+                    <input type="text" id="name" name="name" placeholder="name">
+                    <input type="text" id="phone" name="phone" placeholder="phone number">
+                    <input type="text" id="email" name="email" placeholder="email">
+                    <input type="submit" value="Submit">
                 </form>
             </div></center>
         </div>
