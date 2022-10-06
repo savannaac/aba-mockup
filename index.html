@@ -25,6 +25,16 @@
             }
         }
 
+        function onToggleFooter() {
+            const y = document.getElementById("footer-nav");
+
+            if (y.className === "footer-navigation") {
+                y.className += "responsive";
+            } else {
+                y.className = "footer-navigation";
+            }
+        }
+
         function onSubmit() {
             alert("Thank you! Your reservation was submitted.")
         }
@@ -60,7 +70,7 @@
                     <input type="text" id="date" name="date" placeholder="date">
                     <input type="text" id="time" name="time" placeholder="time">
                     <input type="text" id="people" name="people" placeholder="people">
-                    <button id="submit-button" onclick="onToggle()">Find a Table</button>
+                    <input type="button" id="submit-button" value="Find a Table" onclick="onToggle()">
                 </form>
 
                 <form id="contact-form" style="display: none;" action="" onsubmit="onSubmit()">
@@ -142,14 +152,15 @@
             </div>
         </div>
 
-        <div class="footer-navigation">
-                <a href="" style="margin-left: 20rem;">frequent diner</a>
-                <a href="">gift cards</a>
-                <a href="">employment</a>
-                <a href="">leye.com</a></li>
-                <a href="">terms of use</a>
-                <a href="">privacy policy</a>
-        </div>
+        <nav class="footer-navigation" id="footer-nav">
+                <a href="" class="footer-links" style="margin-left: 20rem;">frequent diner</a>
+                <a href="" class="footer-links">gift cards</a>
+                <a href="" class="footer-links">employment</a>
+                <a href="" class="footer-links">leye.com</a>
+                <a href="" class="footer-links">terms of use</a>
+                <a href="" class="footer-links">privacy policy</a>
+                <a href="javascript:void(0);" class="icon" onclick="onToggleFooter()">+</a>
+        </nav>
     </div>
 
 	<script src="index.js"></script>
