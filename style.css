@@ -183,7 +183,7 @@ a {
     padding: 2rem;
 }
 
-input[type=text] {
+input[type=text], [type=number], [type=date], [type=time] {
     border: 1px solid #82A2D5;
     font-family: 'Montserrat', sans-serif;
     height: 2rem;
