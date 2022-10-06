@@ -2,18 +2,6 @@ body {
     background-color: #fff;
 }
 
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-li {
-    margin-right: 10rem;
-    padding: .15rem;
-}
-
 h1 {
     color: #000;
     font-family: 'Playfair Display', serif;  
@@ -59,7 +47,6 @@ button {
     align-items: center;
     display: flex;
     flex-direction: row;
-    /* gap: 1rem; */
 }
 
 /* fixed header  */

@@ -7,11 +7,11 @@ button.addEventListener("click", (e) => {
     const contactForm = document.getElementById("contact-form");
 
     if (contactForm.style.display === "none") {
-    // 👇️ this SHOWS the form
+    // shows form
     contactForm.style.display = "block";
     reservationForm.style.display = "none";
     } else {
-    // 👇️ this HIDES the form
+    // hides form
     contactForm.style.display = "none";
     reservationForm.style.display = "block";
     }
