@@ -1,5 +1,10 @@
 body {
     background-color: #fff;
+    background: url("public/images/white-wood.jpeg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 h1 {
@@ -43,22 +48,18 @@ button {
     width: 15rem;
 }
 
-.flex-row {
+/* fixed header  */
+.header {
+    /* border: 1px solid yellow;  */
     align-items: center;
     display: flex;
     flex-direction: row;
 }
 
-/* fixed header  */
-.header {
-    background-image: url("public/images/white-wood.jpeg");
-    /* border: 1px solid yellow;  */
-}
-
 .logo {
     height: 125px;
     margin-left: 100px;
-    margin-right: 75px;
+    margin-right: 65px;
 }
 
 .navigation {
@@ -120,7 +121,11 @@ a {
 /* content */
 .content-container{
     /* border: 1px solid red; */
-    background-image: url("public/images/white-wood.jpeg");
+    /* background-image: url("public/images/white-wood.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 100%;
     margin: auto;
     margin-top: 50px;
     width: 98%;
