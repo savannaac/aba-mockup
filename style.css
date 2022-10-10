@@ -80,28 +80,29 @@ button {
     text-transform: uppercase;
 }
 
-.navigation.icon {
+/* .navigation.icon {
     display: none;
-}
+} */
 
 /* responsive navigation  */
 a {
     color: #605B50;
     font-family: 'Playfair Display', serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 3px;
+    margin-left: 2rem;
     margin-right: 1rem;
     text-decoration: none;
     text-transform: uppercase; 
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .navigation a.icon {
         display: block;
         float: right;
     }
-}
+} */
 
 @media screen and (max-width: 600px) {
     .navigation.responsive {position: relative;}

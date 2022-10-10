@@ -16,28 +16,3 @@ button.addEventListener("click", (e) => {
     reservationForm.style.display = "block";
     }
 });
-
-// onToggle = () => {
-//     // e.preventDefault(); 
-//     const x = document.getElementById("navMenu");
-
-//     if (x.className === "navigation") {
-//         x.className += "responsive";
-//     } else {
-//         x.className = "navigation";
-//     }
-// }
-
-// function onToggle() {
-//     const x = document.getElementById("navMenu");
-
-//     if (x.className === "navigation") {
-//         x.className += "responsive";
-//     } else {
-//         x.className = "navigation";
-//     }
-// }
-
-onSubmit = () => {
-    alert("Thank you! Your reservation was submitted.")
-}
