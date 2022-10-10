@@ -240,7 +240,14 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 /* responsive footer  */
-a.footer-links {
+/* oiii */
+@media only screen and (max-width: 600px) {
+    .footer-navigation {
+      flex-direction: column;
+    }
+  }
+
+/* a.footer-links {
     color: #fff;
     font-family: 'Playfair Display', serif;
     font-weight: 500;
@@ -271,4 +278,4 @@ a.footer-links {
         float: none;
         text-align: left;
     }
-}
+} */
