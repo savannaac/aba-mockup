@@ -14,9 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 
+    <!-- <script type = "text/javascript" src="index.js"></script>   -->
     <script>
-        function onToggle() {
-            // e.preventDefault(); 
+        onToggle = () => {
+        // e.preventDefault(); 
             const x = document.getElementById("navMenu");
 
             if (x.className === "navigation") {
@@ -26,7 +27,7 @@
             }
         }
 
-        function onToggleFooter() {
+        onToggleFooter = () => {
             const y = document.getElementById("footer-nav");
 
             if (y.className === "footer-navigation") {
@@ -36,7 +37,7 @@
             }
         }
 
-        function onSubmit() {
+        onSubmit = () => {
             alert("Thank you! Your reservation was submitted.")
         }
     </script>
@@ -52,7 +53,7 @@
             <a href="">group dining</a>
             <a href="">events</a>
             <a href="">team</a>
-            <a href="javascript:void(0);" class="icon" onclick="onToggle()">+</a>
+            <!-- <a href="javascript:void(0);" class="icon" onclick="onToggle()">+</a> -->
         </nav>
     </div>
 
@@ -149,7 +150,7 @@
                 <p class="footer-info">3rd Floor</p>
                 <p class="footer-info">Chicago, IL 60607</p><br>
 
-                <p style="color: #fff;">773-645-1400</p>
+                <p style="color: #fff; font-size: 16px;">773-645-1400</p>
             </div>
         </div>
 
